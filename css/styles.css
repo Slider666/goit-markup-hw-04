@@ -197,7 +197,7 @@
     }
 
 /* Преимущества */
-    .container .edge-list {
+    .edge-list {
         display: flex;
         justify-content: space-between;
     }
@@ -208,16 +208,21 @@
     }
 
     .edge-item:last-child {
-            margin-right: 0;
+        margin-right: 0;
     }
 
     .edge-icon {
         fill: var(--main-text-color);
     }
 
-    .edge-wadding {
-        padding: 25px 100px;
+    .edge-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: 120px;
         margin-bottom: 30px;
+        border-radius: 4px;
 
         background-color: var(--bg-color);
     }
@@ -323,7 +328,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 12px;
+        width: 44px;
+        height: 44px;
         border-radius: 50%;
     }
 
@@ -363,7 +369,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 16px 32px;
+        width: 170px;
+        height: 92px;
         border: 1px solid var(--icon-color);
         border-radius: 4px;
     }
@@ -393,6 +400,7 @@
         margin-bottom: 30px;
     }
 
+
     .work-item:nth-child(3n) {
         margin-right: 0;
     }
@@ -401,7 +409,11 @@
         margin-bottom: 0;
     }
 
-    .work-item:hover, .work-item:focus {
+    .work-link {
+        display: block;
+    }
+
+    .work-link:hover, .work-link:focus {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
         0px 4px 4px rgba(0, 0, 0, 0.06), 
         1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -497,7 +509,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 12px;
+        width: 44px;
+        height: 44px;
         border-radius: 50%;
         background-color: rgba(255, 255, 255, 0.1);;
     }
